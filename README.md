@@ -10,9 +10,9 @@
 
 # Àý×Ó
 
-##Tutorial: ³éÈ¡¹«Ë¾ÊµÌå¼äµÄ¹ÉÈ¨½»Ò×¹ØÏµ
+## Tutorial: ³éÈ¡¹«Ë¾ÊµÌå¼äµÄ¹ÉÈ¨½»Ò×¹ØÏµ
 
-###0. »·¾³×¼±¸
+### 0. »·¾³×¼±¸
 ####0.1. deepdive°²×°
 ÏÂÔØCNdeepdive£¬ÔËÐÐinstall.sh£¬Ñ¡Ôñ1°²×°deepdive¡£
 
@@ -22,16 +22,16 @@
     export PATH="/root/local/bin:$PATH"
 È»ºóÖ´ÐÐsource ~/.bash_profileÉèÖÃ»·¾³±äÁ¿¡£
 
-####0.2. postgresql°²×°
+#### 0.2. postgresql°²×°
 ÔËÐÐ
 
      bash <(curl -fsSL git.io/getdeepdive) postgres 
 °²×°postgresql¡£
  
-####0.3.nlp»·¾³°²×°    
+#### 0.3.nlp»·¾³°²×°    
 ÔËÐÐnlp_setup.sh£¬ÅäÖÃÖÐÎÄstandford nlp»·¾³¡£
 
-####0.4. ÏîÄ¿¿ò¼Ü´î½¨
+#### 0.4. ÏîÄ¿¿ò¼Ü´î½¨
 ½¨Á¢×Ô¼ºµÄÏîÄ¿ÎÄ¼þ¼Ð***transaction***£¬ÔÚ±¾µØpostgresqlÖÐÎªÏîÄ¿½¨Á¢Êý¾Ý¿â£¬ÔÙÔÚÏîÄ¿ÎÄ¼þ¼ÐÏÂ½¨Á¢Êý¾Ý¿âÅäÖÃÎÄ¼þ:
 
      echo "postgresql://$USER@$HOSTNAME:5432/db_name" >db.url
@@ -44,9 +44,9 @@
 deepdive¶¨ÒåÁËºÜ¶à×Ô¼ºµÄÓï·¨¹æÔòºÍ×Ô¶¯»¯½Å±¾£¬µ¼ÈëÊý¾Ý¿âµÄ¹ý³ÌÒ»°ãÎªdeepdive do db_nameÖ¸Áî£¬ÓÃ»§Í¨¹ýÅäÖÃapp.ddlogÖ¸Ê¾Êý¾ÝÁ÷¡£
 
 
-###1. ÊµÑé²½Öè
-####1.1 . ÏÈÑéÊý¾Ýµ¼Èë
-
+### 1. ÊµÑé²½Öè
+#### 1.1 . ÏÈÑéÊý¾Ýµ¼Èë
+ 
 ÎÒÃÇÐèÒª´ÓÖªÊ¶¿âÖÐ»ñÈ¡ÒÑÖª¾ßÓÐ½»Ò×¹ØÏµµÄÊµÌå¶Ô£¬À´×÷ÎªÑµÁ·Êý¾Ý¡£±¾ÏîÄ¿²ÉÓÃµÄÊý¾Ý´Ó¹úÌ©°²Êý¾Ý¿â£¨<http://www.gtarsc.com>£©ÖÐ¹«Ë¾¹ØÏµ-¹ÉÈ¨½»Ò×Ä£¿éÖÐÏÂÔØ¡£
 
 (1).  Í¨¹ýÆ¥ÅäÓÐ½»Ò×µÄ¹ÉÆ±´úÂë¶ÔºÍ´úÂë-¹«Ë¾¶Ô£¬¹ýÂË³ö´æÔÚ½»Ò×¹ØÏµµÄ¹«Ë¾¶Ô£¬´æÈëtransaction_dbdata.csvÖÐ¡£½«csvÎÄ¼þ·ÅÈëinput/ÎÄ¼þ¼ÐÏÂ¡£
@@ -70,7 +70,7 @@ deepdive¶¨ÒåÁËºÜ¶à×Ô¼ºµÄÓï·¨¹æÔòºÍ×Ô¶¯»¯½Å±¾£¬µ¼ÈëÊý¾Ý¿âµÄ¹ý³ÌÒ»°ãÎªdeepdive do 
 - ÔËÐÐÃüÁîÊ±£¬deepdive»áÔÚµ±Ç°ÃüÁîÐÐÀïÉú³ÉÒ»¸öÖ´ÐÐ¼Æ»®ÎÄ¼þ£¬ºÍviÓï·¨Ò»Ñù£¬ÉóºËºóÊ¹ÓÃ:wq±£´æ²¢Ö´ÐÐ¡£
 
 
-####1.2. ´ý³éÈ¡ÎÄÕÂµ¼Èë
+#### 1.2. ´ý³éÈ¡ÎÄÕÂµ¼Èë
 
 (1). ×¼±¸´ý³éÈ¡µÄÎÄÕÂ£¨Ê¾ÀýÊ¹ÓÃÉÏÊÐ¹«Ë¾¹«¸æ£©£¬ÃüÃûÎªarticles.csv£¬·ÅÔÚinputÎÄ¼þ¼ÐÏÂ¡£
 
@@ -105,7 +105,7 @@ deepdive¿ÉÒÔÖ±½Ó²éÑ¯Êý¾Ý¿âÊý¾Ý£¬ÓÃqueryÓï¾ä»òÕßdeepdive sql "sqlÓï¾ä"½øÐÐÊý¾Ý¿â²
     1201841180
     :
     
-####1¡£3. ÓÃnlpÄ£¿é½øÐÐÎÄ±¾´¦Àí
+#### 1.3. ÓÃnlpÄ£¿é½øÐÐÎÄ±¾´¦Àí
 
 deepdiveÄ¬ÈÏ²ÉÓÃstandford nlp½øÐÐÎÄ±¾´¦Àí¡£ÊäÈëÎÄ±¾Êý¾Ý£¬nlpÄ£¿é½«ÒÔ¾ä×ÓÎªµ¥Î»£¬·µ»ØÃ¿¾äµÄ·Ö´Ê¡¢lemma¡¢pos¡¢NERºÍ¾ä·¨·ÖÎöµÄ½á¹û£¬ÎªºóÐøÌØÕ÷³éÈ¡×ö×¼±¸¡£ÎÒÃÇ½«ÕâÐ©½á¹û´æÈësentences±íÖÐ¡£
 (1). ÔÚapp.ddlogÎÄ¼þÖÐ¶¨Òåsentences±í£¬ÓÃÓÚ´æ·Ånlp½á¹û£º
@@ -135,7 +135,7 @@ deepdiveÄ¬ÈÏ²ÉÓÃstandford nlp½øÐÐÎÄ±¾´¦Àí¡£ÊäÈëÎÄ±¾Êý¾Ý£¬nlpÄ£¿é½«ÒÔ¾ä×ÓÎªµ¥Î»£¬
 - º¯Êýµ÷ÓÃudf/nlp\_markup.shµ÷ÓÃnlpÄ£¿é£¬ÕâÀï¿ÉÒÔ×ÔÓÉ·¢»Ó
 - nlp_markup.shµÄ½Å±¾ÄÚÈÝ¼ûtransactionÊ¾Àý´úÂëÖÐµÄudf/ÎÄ¼þ¼Ð£¬Ëüµ÷ÓÃudf/bazzar/parserÏÂµÄrun.shÊµÏÖ¡£
 
--
+-    
 **×¢Òâ£º ´Ë´¦ÐèÒªÖØÐÂ±àÒënlp´úÂëÄ£¿é**
 
 ¸´ÖÆtransaction/udf/µÄÄ¿Â¼ÏÂµÄbazzarÎÄ¼þ¼Ðµ½Äã×Ô¼ºÏîÄ¿µÄudf/ÖÐ¡£Õâ¸öÄ£¿éÐèÒªÖØÐÂ±àÒë¡£½øÈëbazzar/parserÄ¿Â¼ÏÂ£¬Ö´ÐÐ±àÒëÃüÁî:
@@ -168,7 +168,7 @@ deepdiveÄ¬ÈÏ²ÉÓÃstandford nlp½øÐÐÎÄ±¾´¦Àí¡£ÊäÈëÎÄ±¾Êý¾Ý£¬nlpÄ£¿é½«ÒÔ¾ä×ÓÎªµ¥Î»£¬
  **×¢Òâ£º ÕâÒ»²½ÅÜµÄ»á·Ç³£Âý£¬¿ÉÄÜÐèÒªËÄÎå¸öÐ¡Ê±¡£´ó¼Ò¿ÉÒÔ¼õÉÙarticlesµÄÐÐÊý£¬À´Ëõ¶ÌÊ±¼ä£¬Íê³Édemo¡£
 
 
-####1.4. ÊµÌå³éÈ¡¼°ºòÑ¡ÊµÌå¶ÔÉú³É
+#### 1.4. ÊµÌå³éÈ¡¼°ºòÑ¡ÊµÌå¶ÔÉú³É
 
 ÕâÒ»²½£¬ÎÒÃÇÒª³éÈ¡ÎÄ±¾ÖÐµÄºòÑ¡ÊµÌå£¨¹«Ë¾£©£¬²¢Éú³ÉºòÑ¡ÊµÌå¶Ô¡£
 
@@ -254,7 +254,7 @@ deepdiveÄ¬ÈÏ²ÉÓÃstandford nlp½øÐÐÎÄ±¾´¦Àí¡£ÊäÈëÎÄ±¾Êý¾Ý£¬nlpÄ£¿é½«ÒÔ¾ä×ÓÎªµ¥Î»£¬
     
 Éú³ÉºòÑ¡ÊµÌå±í¡£
     
-####1.5. ÌØÕ÷ÌáÈ¡
+#### 1.5. ÌØÕ÷ÌáÈ¡
 
 ÕâÒ»²½ÎÒÃÇ³éÈ¡ºòÑ¡ÊµÌå¶ÔµÄÎÄ±¾ÌØÕ÷¡£
 
@@ -263,7 +263,7 @@ deepdiveÄ¬ÈÏ²ÉÓÃstandford nlp½øÐÐÎÄ±¾´¦Àí¡£ÊäÈëÎÄ±¾Êý¾Ý£¬nlpÄ£¿é½«ÒÔ¾ä×ÓÎªµ¥Î»£¬
     transaction_feature(
     	p1_id   text,
     	p2_id   text,
-    	feature text
+     	feature text
 ).
 
 ÕâÀïµÄfeatureÁÐÊÇÊµÌå¶Ô¼äÒ»ÏµÁÐÎÄ±¾ÌØÕ÷µÄ¼¯ºÏ¡£
@@ -360,7 +360,7 @@ feature
 
 ÏÖÔÚ£¬ÎÒÃÇÒÑ¾­ÓÐÁËÏëÒªÅÐ¶¨¹ØÏµµÄÊµÌå¶ÔºÍËüÃÇµÄÌØÕ÷¼¯ºÏ¡£
 
-####1.6. Ñù±¾´ò±ê
+#### 1.6. Ñù±¾´ò±ê
 ÕâÒ»²½£¬ÎÒÃÇÏ£ÍûÔÚºòÑ¡ÊµÌå¶ÔÖÐ±ê³ö²¿·ÖÕý¸ºÀý¡£
 - ÀûÓÃÒÑÖªµÄÊµÌå¶ÔºÍºòÑ¡ÊµÌå¶Ô¹ØÁª
 - ÀûÓÃ¹æÔò´ò²¿·ÖÕý¸º±êÇ©
@@ -445,10 +445,10 @@ rule_id´ú±íÔÚ±ê¼Ç¾ö¶¨Ïà¹ØÐÔµÄ¹æÔòÃû³Æ¡£labelÎªÕýÖµ±íÊ¾ÕýÏà¹Ø£¬¸ºÖµ±íÊ¾¸ºÏà¹Ø¡£¾ø
     
     $ deepdive do transaction_label_resolved
     
-###2. Ä£ÐÍ¹¹½¨
+### 2. Ä£ÐÍ¹¹½¨
 Í¨¹ý1µÄ²½Öè£¬ÎÒÃÇÒÑ¾­µÃµ½ÁËËùÓÐÇ°ÆÚÐèÒª×¼±¸µÄÊý¾Ý¡£ÏÂÃæ¿ÉÒÔ¹¹½¨Ä£ÐÍÁË¡£
 
-####2.1 ±äÁ¿±í¶¨Òå
+#### 2.1 ±äÁ¿±í¶¨Òå
 
 (1). ¶¨Òå×îÖÕ´æ´¢µÄ±í¸ñ£¬¡º£¿¡»±íÊ¾´Ë±íÊÇÓÃ»§Ä£Ê½ÏÂµÄ±äÁ¿±í£¬¼´ÐèÒªÍÆµ¼¹ØÏµµÄ±í¡£ÕâÀïÎÒÃÇÔ¤²âµÄÊÇ¹«Ë¾¼äÊÇ¹·´æÔÚ½»Ò×¹ØÏµ¡£
 
@@ -471,7 +471,7 @@ rule_id´ú±íÔÚ±ê¼Ç¾ö¶¨Ïà¹ØÐÔµÄ¹æÔòÃû³Æ¡£labelÎªÕýÖµ±íÊ¾ÕýÏà¹Ø£¬¸ºÖµ±íÊ¾¸ºÏà¹Ø¡£¾ø
     $ deepdive compile && deepdive do has_transaction
     
 
-####2.2 Òò×ÓÍ¼¹¹½¨
+#### 2.2 Òò×ÓÍ¼¹¹½¨
 
     
 (1). Ö¸¶¨ÌØÕ÷
