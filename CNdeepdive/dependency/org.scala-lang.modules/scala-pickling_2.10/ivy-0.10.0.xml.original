@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.scala-lang.modules</groupId>
+    <artifactId>scala-pickling_2.10</artifactId>
+    <packaging>jar</packaging>
+    <description>scala-pickling</description>
+    <version>0.10.0</version>
+    <name>scala-pickling</name>
+    <organization>
+        <name>LAMP/EPFL</name>
+        <url>http://lamp.epfl.ch</url>
+    </organization>
+    <url>https://github.com/scala/pickling</url>
+    <inceptionYear>2013</inceptionYear>
+    <licenses>
+        <license>
+            <name>BSD-like</name>
+            <url>http://www.scala-lang.org/downloads/license.html </url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>git://github.com/scala/pickling.git</url>
+        <connection>scm:git:git://github.com/scala/pickling.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <id>phaller</id>
+            <name>Philipp Haller</name>
+            <timezone>+1</timezone>
+            <url>http://github.com/phaller</url>
+        </developer>
+        <developer>
+            <id>xeno-by</id>
+            <name>Eugene Burmako</name>
+            <timezone>+1</timezone>
+            <url>http://github.com/xeno-by</url>
+        </developer>
+        <developer>
+            <id>heathermiller</id>
+            <name>Heather Miller</name>
+            <timezone>+1</timezone>
+            <url>http://github.com/heathermiller</url>
+        </developer>
+    </developers>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-compiler</artifactId>
+            <version>2.10.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.10.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.10.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_2.10</artifactId>
+            <version>2.1.7</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scalacheck</groupId>
+            <artifactId>scalacheck_2.10</artifactId>
+            <version>1.11.6</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scalamacros</groupId>
+            <artifactId>quasiquotes_2.10</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+    </dependencies>
+</project>

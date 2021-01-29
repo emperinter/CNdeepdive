@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.log4s</groupId>
+    <artifactId>log4s_2.10</artifactId>
+    <packaging>jar</packaging>
+    <description>High-performance SLF4J wrapper that provides convenient Scala bindings using macros.</description>
+    <url>http://log4s.org</url>
+    <version>1.1.3</version>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <name>Log4s</name>
+    <inceptionYear>2013</inceptionYear>
+    <organization>
+        <name>org.log4s</name>
+        <url>http://log4s.org</url>
+    </organization>
+    <scm>
+        <url>http://github.com/Log4s/log4s</url>
+        <connection>scm:git:git@github.com:Log4s/log4.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <id>sarah</id>
+            <name>Sarah Gerweck</name>
+            <email>sarah.a180@gmail.com</email>
+            <url>https://github.com/sarahgerweck</url>
+            <timezone>America/Los_Angeles</timezone>
+        </developer>
+    </developers>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.10.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.7</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.1.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_2.10</artifactId>
+            <version>2.2.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.10.4</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>

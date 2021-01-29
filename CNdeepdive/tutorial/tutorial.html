@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generated-by" content="Markdown PRO, http://markdownpro.com"/>
+<title></title>
+<style type="text/css">
+html,body{margin:0;padding:0;}
+body {padding: 20px}
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+q:before,q:after,blockquote:before,blockquote:after{content:"";}
+html{overflow-y:scroll;font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+a:focus{outline:thin dotted;}
+a:hover,a:active{outline:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio:not([controls]){display:none;}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+img{border:0;-ms-interpolation-mode:bicubic;}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
+button,input{line-height:normal;*overflow:visible;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;}
+input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
+input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
+textarea{overflow:auto;vertical-align:top;}
+html,body{background-color:#ffffff;}
+body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:18px;color:#404040;}
+.container{width:940px;margin-left:auto;margin-right:auto;zoom:1;}.container:before,.container:after{display:table;content:"";zoom:1;*display:inline;}
+.container:after{clear:both;}
+.container-fluid{position:relative;min-width:940px;padding-left:20px;padding-right:20px;zoom:1;}.container-fluid:before,.container-fluid:after{display:table;content:"";zoom:1;*display:inline;}
+.container-fluid:after{clear:both;}
+.container-fluid>.sidebar{float:left;width:220px;}
+.container-fluid>.content{margin-left:240px;}
+a{color:#0069d6;text-decoration:none;line-height:inherit;font-weight:inherit;}a:hover{color:#00438a;text-decoration:underline;}
+.pull-right{float:right;}
+.pull-left{float:left;}
+.hide{display:none;}
+.show{display:block;}
+.row{zoom:1;margin-left:-20px;}.row:before,.row:after{display:table;content:"";zoom:1;*display:inline;}
+.row:after{clear:both;}
+p{font-size:13px;font-weight:normal;line-height:18px;margin-bottom:9px;}p small{font-size:11px;color:#bfbfbf;}
+h1,h2,h3,h4,h5,h6{font-weight:bold;color:#404040;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{color:#bfbfbf;}
+h1{margin-bottom:18px;font-size:30px;line-height:36px;}h1 small{font-size:18px;}
+h2{font-size:24px;line-height:36px;}h2 small{font-size:14px;}
+h3,h4,h5,h6{line-height:36px;}
+h3{font-size:18px;}h3 small{font-size:14px;}
+h4{font-size:16px;}h4 small{font-size:12px;}
+h5{font-size:14px;}
+h6{font-size:13px;color:#bfbfbf;text-transform:uppercase;}
+ul,ol{margin:0 0 18px 25px;}
+ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
+ul{list-style:disc;}
+ol{list-style:decimal;}
+li{line-height:18px;color:#808080;}
+ul.unstyled{list-style:none;margin-left:0;}
+dl{margin-bottom:18px;}dl dt,dl dd{line-height:18px;}
+dl dt{font-weight:bold;}
+dl dd{margin-left:9px;}
+hr{margin:20px 0 19px;border:0;border-bottom:1px solid #eee;}
+strong{font-style:inherit;font-weight:bold;}
+em{font-style:italic;font-weight:inherit;line-height:inherit;}
+.muted{color:#bfbfbf;}
+blockquote{margin-bottom:18px;border-left:5px solid #eee;padding-left:15px;}blockquote p{font-size:14px;font-weight:300;line-height:18px;margin-bottom:0;}
+blockquote small{display:block;font-size:12px;font-weight:300;line-height:18px;color:#bfbfbf;}blockquote small:before{content:'\2014 \00A0';}
+address{display:block;line-height:18px;margin-bottom:18px;}
+code,pre{padding:0 3px 2px;font-family:Monaco, Andale Mono, Courier New, monospace;font-size:12px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+code{padding:1px 3px;}
+pre{background-color:#f5f5f5;display:block;padding:8.5px;margin:0 0 18px;line-height:18px;font-size:12px;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
+form{margin-bottom:18px;}
+fieldset{margin-bottom:18px;padding-top:18px;}fieldset legend{display:block;padding-left:150px;font-size:19.5px;line-height:1;color:#404040;*padding:0 0 5px 145px;*line-height:1.5;}
+form .clearfix{margin-bottom:18px;zoom:1;}form .clearfix:before,form .clearfix:after{display:table;content:"";zoom:1;*display:inline;}
+form .clearfix:after{clear:both;}
+label,input,select,textarea{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:normal;}
+label{padding-top:6px;font-size:13px;line-height:18px;float:left;width:130px;text-align:right;color:#404040;}
+form .input{margin-left:150px;}
+input[type=checkbox],input[type=radio]{cursor:pointer;}
+input,textarea,select,.uneditable-input{display:inline-block;width:210px;height:18px;padding:4px;font-size:13px;line-height:18px;color:#808080;border:1px solid #ccc;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+input[type=checkbox],input[type=radio]{width:auto;height:auto;padding:0;margin:3px 0;*margin-top:0;line-height:normal;border:none;}
+input[type=file]{background-color:#ffffff;padding:initial;border:initial;line-height:initial;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+input[type=button],input[type=reset],input[type=submit]{width:auto;height:auto;}
+select,input[type=file]{height:27px;line-height:27px;*margin-top:4px;}
+select[multiple]{height:inherit;}
+textarea{height:auto;}
+.uneditable-input{background-color:#ffffff;display:block;border-color:#eee;-webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);-moz-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);cursor:not-allowed;}
+:-moz-placeholder{color:#bfbfbf;}
+::-webkit-input-placeholder{color:#bfbfbf;}
+input,textarea{-webkit-transition:border linear 0.2s,box-shadow linear 0.2s;-moz-transition:border linear 0.2s,box-shadow linear 0.2s;-ms-transition:border linear 0.2s,box-shadow linear 0.2s;-o-transition:border linear 0.2s,box-shadow linear 0.2s;transition:border linear 0.2s,box-shadow linear 0.2s;-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);}
+input:focus,textarea:focus{outline:0;border-color:rgba(82, 168, 236, 0.8);-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);}
+input[type=file]:focus,input[type=checkbox]:focus,select:focus{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;outline:1px dotted #666;}
+form div.clearfix.error{background:#fae5e3;padding:10px 0;margin:-10px 0 10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}form div.clearfix.error>label,form div.clearfix.error span.help-inline,form div.clearfix.error span.help-block{color:#9d261d;}
+form div.clearfix.error input,form div.clearfix.error textarea{border-color:#c87872;-webkit-box-shadow:0 0 3px rgba(171, 41, 32, 0.25);-moz-box-shadow:0 0 3px rgba(171, 41, 32, 0.25);box-shadow:0 0 3px rgba(171, 41, 32, 0.25);}form div.clearfix.error input:focus,form div.clearfix.error textarea:focus{border-color:#b9554d;-webkit-box-shadow:0 0 6px rgba(171, 41, 32, 0.5);-moz-box-shadow:0 0 6px rgba(171, 41, 32, 0.5);box-shadow:0 0 6px rgba(171, 41, 32, 0.5);}
+form div.clearfix.error .input-prepend span.add-on,form div.clearfix.error .input-append span.add-on{background:#f4c8c5;border-color:#c87872;color:#b9554d;}
+table{width:100%;margin-bottom:18px;padding:0;border-collapse:separate;*border-collapse:collapse;font-size:13px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}table th,table td{padding:10px 10px 9px;line-height:18px;text-align:left;}
+table th{padding-top:9px;font-weight:bold;vertical-align:middle;border-bottom:1px solid #ddd;}
+table td{vertical-align:top;}
+table th+th,table td+td{border-left:1px solid #ddd;}
+table tr+tr td{border-top:1px solid #ddd;}
+table tbody tr:first-child td:first-child{-webkit-border-radius:4px 0 0 0;-moz-border-radius:4px 0 0 0;border-radius:4px 0 0 0;}
+table tbody tr:first-child td:last-child{-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0;border-radius:0 4px 0 0;}
+table tbody tr:last-child td:first-child{-webkit-border-radius:0 0 0 4px;-moz-border-radius:0 0 0 4px;border-radius:0 0 0 4px;}
+table tbody tr:last-child td:last-child{-webkit-border-radius:0 0 4px 0;-moz-border-radius:0 0 4px 0;border-radius:0 0 4px 0;}
+.zebra-striped tbody tr:nth-child(odd) td{background-color:#f9f9f9;}
+.zebra-striped tbody tr:hover td{background-color:#f5f5f5;}
+.zebra-striped .header{cursor:pointer;}.zebra-striped .header:after{content:"";float:right;margin-top:7px;border-width:0 4px 4px;border-style:solid;border-color:#000 transparent;visibility:hidden;}
+.zebra-striped .header:hover:after{visibility:visible;}
+footer{margin-top:17px;padding-top:17px;border-top:1px solid #eee;}
+.page-header{margin-bottom:17px;border-bottom:1px solid #ddd;-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);-moz-box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);}.page-header h1{margin-bottom:8px;}
+.close{float:right;color:#000000;font-size:20px;font-weight:bold;line-height:13.5px;text-shadow:0 1px 0 #ffffff;filter:alpha(opacity=20);-khtml-opacity:0.2;-moz-opacity:0.2;opacity:0.2;}.close:hover{color:#000000;text-decoration:none;filter:alpha(opacity=40);-khtml-opacity:0.4;-moz-opacity:0.4;opacity:0.4;}
+
+pre {
+	padding: 0;
+	margin: 10px 0px 10px;
+	overflow: auto; /*--If the Code exceeds the width, a scrolling is available--*/
+	overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
+}
+pre code {
+	margin: 5px;  /*--Left Margin--*/
+	padding: 0px;
+	display: block;
+    line-height: 18px;
+}
+.center { text-align:center}
+.left {text-align:left}
+.right {text-align:right}
+
+</style><style type="text/css">
+body {
+	font-family: "Geneva", Arial, sans-serif;
+	font-size: 13px;
+	margin: 10px;
+}
+
+a, a:visited {
+	color: #09c;
+}
+
+a:hover {
+	color: #336699;
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0px 0px 10px;	
+	font-weight: bold;
+}
+
+h2 {
+	border-bottom: 2px dotted #ccc;
+	margin: 5px 0px 15px;	
+}
+
+h6 {
+	color: #09c;
+}
+
+blockquote {
+	font-family: "Georgia", Courier New, courier, sans-serif;
+	background: #efefef;
+	padding: 5px 10px;
+	border: solid 1px #ddd;
+	margin: 15px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	color:  #333;
+	
+}
+
+ul, ol {
+	margin-bottom: 15px;
+}
+
+li {
+	padding: 3px;
+}
+
+
+
+code {
+	background-color: #f1f1f1;
+    color: #336699;
+}
+
+pre {
+	background-color: #f1f1f1;
+}
+
+pre > code {
+	margin: 0px;
+	padding: 5px;
+	border: 0px;
+	background-color: #f1f1f1;
+}
+
+
+</style></head>
+<body>
+<h2>Tutorial: 抽取公司实体间的股权交易关系</h2>
+
+<h3>0. 环境准备</h3>
+
+<h4>0.1. deepdive安装</h4>
+
+<p>下载CNdeepdive，运行install.sh，选择1安装deepdive。</p>
+
+<p>配置环境变量，deepdive的可执行文件一般安装在~/local/bin文件夹下。
+在~/.bash_profile下添加如下内容并保存：</p>
+
+<pre><code>export PATH=&quot;/root/local/bin:$PATH&quot;
+</code></pre>
+
+<p>然后执行source ~/.bash_profile设置环境变量。</p>
+
+<h4>0.2. postgresql安装</h4>
+
+<p>运行</p>
+
+<pre><code> bash &lt;(curl -fsSL git.io/getdeepdive) postgres 
+</code></pre>
+
+<p>安装postgresql。</p>
+
+<h4>0.3.nlp环境安装</h4>
+
+<p>运行nlp_setup.sh，配置中文standford nlp环境。</p>
+
+<h4>0.4. 项目框架搭建</h4>
+
+<p>建立自己的项目文件夹<strong><em>transaction</em></strong>，在本地postgresql中为项目建立数据库，再在项目文件夹下建立数据库配置文件:</p>
+
+<pre><code> echo &quot;postgresql://$USER@$HOSTNAME:5432/db_name&quot; &gt;db.url
+</code></pre>
+
+<p>再在transaction下分别建立输入数据文件夹<strong><em>input</em></strong>，脚本文件夹<strong><em>udf</em></strong>，用户配置文件app.ddlog，模型配置文件deepdive.conf， 可参照给定的transaction文件夹样例格式。</p>
+
+<p>（PS：transaction文件夹中是已经建立完毕的项目，后面所需的脚本和数据文件都可以直接复制）</p>
+
+<p>deepdive定义了很多自己的语法规则和自动化脚本，导入数据库的过程一般为deepdive do db_name指令，用户通过配置app.ddlog指示数据流。</p>
+
+<h3>1. 实验步骤</h3>
+
+<h4>1.1 . 先验数据导入</h4>
+
+<p>我们需要从知识库中获取已知具有交易关系的实体对，来作为训练数据。本项目采用的数据从国泰安数据库（<a href="http://www.gtarsc.com">http://www.gtarsc.com</a>）中公司关系-股权交易模块中下载。</p>
+
+<p>(1).  通过匹配有交易的股票代码对和代码-公司对，过滤出存在交易关系的公司对，存入transaction_dbdata.csv中。将csv文件放入input/文件夹下。</p>
+
+<p>(2). 在app.ddlog中定义相应的数据表</p>
+
+<pre><code>@source
+transaction_dbdata(
+    @key
+    company1_name text,
+    @key
+    company2_name text
+).
+</code></pre>
+
+<p>(3). 命令行生成postgresql数据表   </p>
+
+<pre><code>$ deepdive compile &amp;&amp; deepdive do transaction_dbdata
+</code></pre>
+
+<ul>
+<li>在执行app.ddlog前，如果有改动，需要先执行deepdive compile编译才能生效</li>
+<li>对于不依赖于其他表的表格，deepdive会自动去input文件夹下找到同名csv文件，在postgresql里建表导入</li>
+<li>运行命令时，deepdive会在当前命令行里生成一个执行计划文件，和vi语法一样，审核后使用:wq保存并执行。</li>
+</ul>
+
+<h4>1.2. 待抽取文章导入</h4>
+
+<p>(1). 准备待抽取的文章（示例使用上市公司公告），命名为articles.csv，放在input文件夹下。</p>
+
+<p>(2). 在app.ddlog中建立对应的articles表。</p>
+
+<pre><code>articles(
+     id         text,
+     content    text
+).
+</code></pre>
+
+<p>(3). 同理，执行命令行，导入文章到postgresql中。</p>
+
+<pre><code>$ deepdive do articles
+</code></pre>
+
+<p>deepdive可以直接查询数据库数据，用query语句或者deepdive sql &quot;sql语句&quot;进行数据库操作。进行查询id指令，检验导入是否成功：</p>
+
+<pre><code>$ deepdive query &#39;?- articles(id, _).&#39;
+
+id     
+------------
+1201835868
+1201835869
+1201835883
+1201835885
+1201835927
+1201845343
+1201835928
+1201835930
+1201835934
+1201841180
+:
+</code></pre>
+
+<h4>1。3. 用nlp模块进行文本处理</h4>
+
+<p>deepdive默认采用standford nlp进行文本处理。输入文本数据，nlp模块将以句子为单位，返回每句的分词、lemma、pos、NER和句法分析的结果，为后续特征抽取做准备。我们将这些结果存入sentences表中。
+(1). 在app.ddlog文件中定义sentences表，用于存放nlp结果：</p>
+
+<pre><code>sentences(
+    doc_id         text,
+    sentence_index int,
+    sentence_text  text,
+    tokens         text[],
+    lemmas         text[],
+   pos_tags       text[],
+    ner_tags       text[],
+    doc_offsets    int[],
+    dep_types      text[],
+    dep_tokens     int[]
+).
+</code></pre>
+
+<p>(2). 定义NLP处理的函数nlp_markup</p>
+
+<pre><code>function nlp_markup over (
+    doc_id  text,
+    content text
+) returns rows like sentences
+implementation &quot;udf/nlp_markup.sh&quot; handles tsv lines.
+</code></pre>
+
+<ul>
+<li>声明一个ddlog函数，这个函数输入文章的doc_id和content，输出按sentences表的字段格式</li>
+<li>函数调用udf/nlp_markup.sh调用nlp模块，这里可以自由发挥</li>
+<li>nlp_markup.sh的脚本内容见transaction示例代码中的udf/文件夹，它调用udf/bazzar/parser下的run.sh实现。</li>
+</ul>
+
+<h2></h2>
+
+<p><strong>注意： 此处需要重新编译nlp代码模块</strong></p>
+
+<p>复制transaction/udf/的目录下的bazzar文件夹到你自己项目的udf/中。这个模块需要重新编译。进入bazzar/parser目录下，执行编译命令:</p>
+
+<pre><code>sbt/sbt stage
+</code></pre>
+
+<p>编译完成后会在target中生成可执行文件。</p>
+
+<h2></h2>
+
+<p>(3). 使用如下语法调用nlp_markup函数，从articles表中读取输入，输出存放在sentences表中。</p>
+
+<pre><code>sentences += nlp_markup(doc_id, content) :-
+articles(doc_id, content).
+</code></pre>
+
+<p>(4). 编译并执行deepdive compile和deepdive do sentences两个命令，生成sentences数据表。</p>
+
+<p>执行以下命令来查询生成结果：</p>
+
+<pre><code>deepdive query &#39;
+doc_id, index, tokens, ner_tags | 5
+?- sentences(doc_id, index, text, tokens, lemmas, pos_tags, ner_tags, _, _, _).
+&#39;    
+</code></pre>
+
+<p>可以看到id为1201734370文章的前五句的解析结果。</p>
+
+<p><strong><em>tips:</em></strong> <em>可以看到sentences给出的plan中包含articles表的执行。plan中前面有冒号的行表示默认已经执行，不会重做，否则将要生成。如果articles有更新，需要重新deepdive redo articles或者用deepdive mark todo articles来将articles标记为未执行，这样在生成sentences的过程中就会默认更新articles了。</em></p>
+
+<p>**注意： 这一步跑的会非常慢，可能需要四五个小时。大家可以减少articles的行数，来缩短时间，完成demo。</p>
+
+<h4>1.4. 实体抽取及候选实体对生成</h4>
+
+<p>这一步，我们要抽取文本中的候选实体（公司），并生成候选实体对。</p>
+
+<p>(1). 首先在app.ddlog中定义实体数据表：</p>
+
+<pre><code>company_mention(
+    mention_id     text,
+    mention_text   text,
+    doc_id         text,
+    sentence_index int,
+    begin_index    int,
+    end_index      int
+).
+</code></pre>
+
+<p>每个实体都是表中的一列数据，同时存储了实体在句中的起始位置和结束位置。</p>
+
+<p>(2). 再定义实体抽取的函数：</p>
+
+<pre><code>function map_company_mention over (
+    doc_id         text,
+    sentence_index int,
+    tokens         text[],
+    ner_tags       text[]
+) returns rows like company_mention
+implementation &quot;udf/map_company_mention.py&quot; handles tsv lines.
+</code></pre>
+
+<ul>
+<li>map_company_mention.py见样例。这个脚本遍历每个数据库中的句子，找出连续的NER标记为ORG的序列，再做其它过滤处理，其它脚本也要复制过去。这个脚本是一个生成函数，用yield语句返回输出行。</li>
+</ul>
+
+<p>(3). 然后在app.ddlog中写调用函数，从sentences表中输入，输出到company_mention中。</p>
+
+<pre><code>company_mention += map_company_mention(
+doc_id, sentence_index, tokens, ner_tags
+) :-
+sentences(doc_id, sentence_index, _, tokens, _, _, ner_tags, _, _, _).
+</code></pre>
+
+<p>(4). 最后编译并执行：</p>
+
+<pre><code>$ deepdive compile &amp;&amp; deepdive do company_mention
+</code></pre>
+
+<p>(5). 下面生成实体对，即要预测关系的两个公司。在这一步我们将实体表做笛卡尔积，同时按自定义脚本过滤一些不符合形成交易条件的公司。定义数据表如下：</p>
+
+<pre><code>transaction_candidate(
+    p1_id   text,
+    p1_name text,
+    p2_id   text,
+    p2_name text
+).
+</code></pre>
+
+<p>(6). 统计每个句子的实体数：</p>
+
+<pre><code>num_company(doc_id, sentence_index, COUNT(p)) :-
+company_mention(p, _, doc_id, sentence_index, _, _).
+</code></pre>
+
+<p>(7). 定义过滤函数：</p>
+
+<pre><code>function map_transaction_candidate over (
+    p1_id         text,
+    p1_name       text,
+    p2_id         text,
+    p2_name      text
+) returns rows like transaction_candidate
+implementation &quot;udf/map_transaction_candidate.py&quot; handles tsv lines.
+</code></pre>
+
+<p>(8). 描述函数的调用：</p>
+
+<pre><code>transaction_candidate += map_transaction_candidate(p1, p1_name, p2, p2_name) :-
+num_company(same_doc, same_sentence, num_p),
+company_mention(p1, p1_name, same_doc, same_sentence, p1_begin, _),
+company_mention(p2, p2_name, same_doc, same_sentence, p2_begin, _),
+num_p &lt; 5,
+p1_name != p2_name,
+p1_begin != p2_begin.
+</code></pre>
+
+<p>一些简单的过滤操作可以直接通过app.ddlog中的数据库语法执行，比如p1_name != p2_name，过滤掉两个相同实体组成的实体对。</p>
+
+<p>（PS：此处如果报路径错误，请将transform.py中company_full_short.csv的相对路径改为绝对路径。）</p>
+
+<p>(9). 编译并执行：</p>
+
+<pre><code>$ deepdive compile &amp;&amp; deepdive do transaction_candidate
+</code></pre>
+
+<p>生成候选实体表。</p>
+
+<h4>1.5. 特征提取</h4>
+
+<p>这一步我们抽取候选实体对的文本特征。</p>
+
+<p>(1). 定义特征表：</p>
+
+<pre><code>transaction_feature(
+    p1_id   text,
+    p2_id   text,
+    feature text
+</code></pre>
+
+<p>).</p>
+
+<p>这里的feature列是实体对间一系列文本特征的集合。</p>
+
+<p>(2). 生成feature表需要的输入为实体对表和文本表，输入和输出属性在app.ddlog中定义如下：</p>
+
+<pre><code> function extract_transaction_features over (
+    p1_id          text,
+    p2_id          text,
+    p1_begin_index int,
+    p1_end_index   int,
+    p2_begin_index int,
+    p2_end_index   int,
+    doc_id         text,
+    sent_index     int,
+    tokens         text[],
+    lemmas         text[],
+    pos_tags       text[],
+    ner_tags       text[],
+    dep_types      text[],
+    dep_tokens     int[]
+) returns rows like transaction_feature
+implementation &quot;udf/extract_transaction_features.py&quot; handles tsv lines.
+</code></pre>
+
+<ul>
+<li>函数调用extract_transaction_features.py来抽取特征。这里调用了deepdive自带的ddlib库，得到各种POS/NER/词序列的窗口特征。此处也可以自定义特征。</li>
+</ul>
+
+<p>(3).把sentences表和mention表做join，得到的结果输入函数，输出到transaction_feature表中。  </p>
+
+<pre><code>transaction_feature += extract_transaction_features(
+p1_id, p2_id, p1_begin_index, p1_end_index, p2_begin_index, p2_end_index,
+doc_id, sent_index, tokens, lemmas, pos_tags, ner_tags, dep_types, dep_tokens
+) :-
+company_mention(p1_id, _, doc_id, sent_index, p1_begin_index, p1_end_index),
+company_mention(p2_id, _, doc_id, sent_index, p2_begin_index, p2_end_index),
+sentences(doc_id, sent_index, _, tokens, lemmas, pos_tags, ner_tags, _, dep_types, dep_tokens).
+</code></pre>
+
+<p>(4). 然后编译并执行，生成特征数据库：</p>
+
+<pre><code> $ deepdive compile &amp;&amp; deepdive do transaction_feature
+</code></pre>
+
+<p>执行如下语句，查看生成结果：</p>
+
+<pre><code> deepdive query &#39;| 20 ?- transaction_feature(_, _, feature).&#39;
+</code></pre>
+
+<hr>
+
+<p>feature<br>
+————————————————————————————</p>
+
+<p>WORD_SEQ_[郴州市 城市 建设 投资 发展 集团 有限 公司]</p>
+
+<p>LEMMA_SEQ_[郴州市 城市 建设 投资 发展 集团 有限 公司]</p>
+
+<p>NER_SEQ_[ORG ORG ORG ORG ORG ORG ORG ORG]</p>
+
+<p>POS_SEQ_[NR NN NN NN NN NN JJ NN]</p>
+
+<p>W_LEMMA_L_1_R_1_[为]_[提供]</p>
+
+<p>W_NER_L_1_R_1_[O]_[O]</p>
+
+<p>W_LEMMA_L_1_R_2_[为]_[提供 担保]</p>
+
+<p>W_NER_L_1_R_2_[O]_[O O]</p>
+
+<p>W_LEMMA_L_1_R_3_[为]_[提供 担保 公告]</p>
+
+<p>W_NER_L_1_R_3_[O]_[O O O]</p>
+
+<p>W_LEMMA_L_2_R_1_[公司 为]_[提供]</p>
+
+<p>W_NER_L_2_R_1_[ORG O]_[O]</p>
+
+<p>W_LEMMA_L_2_R_2_[公司 为]_[提供 担保]</p>
+
+<p>W_NER_L_2_R_2_[ORG O]_[O O]</p>
+
+<p>W_LEMMA_L_2_R_3_[公司 为]_[提供 担保 公告]</p>
+
+<p>W_NER_L_2_R_3_[ORG O]_[O O O]</p>
+
+<p>W_LEMMA_L_3_R_1_[有限 公司 为]_[提供]</p>
+
+<p>W_NER_L_3_R_1_[ORG ORG O]_[O]</p>
+
+<p>W_LEMMA_L_3_R_2_[有限 公司 为]_[提供 担保]</p>
+
+<p>W_NER_L_3_R_2_[ORG ORG O]_[O O]</p>
+
+<p>(20 rows)</p>
+
+<p>:</p>
+
+<p>现在，我们已经有了想要判定关系的实体对和它们的特征集合。</p>
+
+<h4>1.6. 样本打标</h4>
+
+<p>这一步，我们希望在候选实体对中标出部分正负例。</p>
+
+<ul>
+<li>利用已知的实体对和候选实体对关联</li>
+<li>利用规则打部分正负标签</li>
+</ul>
+
+<p>(1). 首先在app.ddlog里定义transaction_label表，存储监督数据：</p>
+
+<pre><code>@extraction
+transaction_label(
+    @key
+    @references(relation=&quot;has_transaction&quot;, column=&quot;p1_id&quot;, alias=&quot;has_transaction&quot;)
+    p1_id   text,
+    @key
+    @references(relation=&quot;has_transaction&quot;, column=&quot;p2_id&quot;, alias=&quot;has_transaction&quot;)
+    p2_id   text,
+    @navigable
+    label   int,
+    @navigable
+    rule_id text
+).
+</code></pre>
+
+<p>rule_id代表在标记决定相关性的规则名称。label为正值表示正相关，负值表示负相关。绝对值越大，相关性越大。</p>
+
+<p>(2). 初始化定义，复制transaction_candidate表，label均定义为零。</p>
+
+<pre><code> transaction_label(p1, p2, 0, NULL) :- transaction_candidate(p1, _, p2, _).
+</code></pre>
+
+<p>(3).将前面准备的db数据导入transaction_label表中，rule<em>id标记为&quot;from\</em>dbdata&quot;。因为国泰安的数据比较官方，可以基于较高的权重，这里设为3。在app.ddlog中定义如下：</p>
+
+<pre><code>transaction_label(p1,p2, 3, &quot;from_dbdata&quot;) :-
+    transaction_candidate(p1, p1_name, p2, p2_name), transaction_dbdata(n1, n2),
+    [ lower(n1) = lower(p1_name), lower(n2) = lower(p2_name) ;
+      lower(n2) = lower(p1_name), lower(n1) = lower(p2_name) ].
+</code></pre>
+
+<p>(4). 如果只利用下载的实体对，可能和未知文本中提取的实体对重合度较小，不利于特征参数推导。因此可以通过一些逻辑规则，对未知文本进行预标记。</p>
+
+<pre><code> function supervise over (
+    p1_id text, p1_begin int, p1_end int,
+    p2_id text, p2_begin int, p2_end int,
+    doc_id         text,
+    sentence_index int,
+    sentence_text  text,
+    tokens         text[],
+    lemmas         text[],
+    pos_tags       text[],
+    ner_tags       text[],
+    dep_types      text[],
+    dep_tokens     int[]
+) returns (
+    p1_id text, p2_id text, label int, rule_id text
+)
+implementation &quot;udf/supervise_transaction.py&quot; handles tsv lines.
+</code></pre>
+
+<ul>
+<li>  输入候选实体对的关联文本，定义打标函数</li>
+<li>  函数调用udf/supervise_transaction.py，规则名称和所占的权重定义在脚本中。在app.ddlog中定义标记函数。</li>
+</ul>
+
+<p>(5). 调用标记函数，将规则抽到的数据写入transaction_label表中。  </p>
+
+<pre><code>transaction_label += supervise(
+p1_id, p1_begin, p1_end,
+p2_id, p2_begin, p2_end,
+doc_id, sentence_index, sentence_text,
+tokens, lemmas, pos_tags, ner_tags, dep_types, dep_token_indexes
+) :-
+transaction_candidate(p1_id, _, p2_id, _),
+company_mention(p1_id, p1_text, doc_id, sentence_index, p1_begin, p1_end),
+company_mention(p2_id, p2_text, _, _, p2_begin, p2_end),
+sentences(
+    doc_id, sentence_index, sentence_text,
+    tokens, lemmas, pos_tags, ner_tags, _, dep_types, dep_token_indexes
+).
+</code></pre>
+
+<p>(6). 不同的规则可能覆盖了相同的实体对，从未给出不同甚至相反的label。建立transaction<em>label</em>resolved表，统一实体对间的label。利用label求和，在多条规则和知识库标记的结果中，为每对实体做vote。</p>
+
+<pre><code> transaction_label_resolved(p1_id, p2_id, SUM(vote)) :-transaction_label(p1_id, p2_id, vote, rule_id).
+</code></pre>
+
+<p>(7). 执行以下命令，得到最终标签。</p>
+
+<pre><code>$ deepdive do transaction_label_resolved
+</code></pre>
+
+<h3>2. 模型构建</h3>
+
+<p>通过1的步骤，我们已经得到了所有前期需要准备的数据。下面可以构建模型了。</p>
+
+<h4>2.1 变量表定义</h4>
+
+<p>(1). 定义最终存储的表格，『？』表示此表是用户模式下的变量表，即需要推导关系的表。这里我们预测的是公司间是狗存在交易关系。</p>
+
+<pre><code>@extraction
+has_transaction?(
+    p1_id text,
+    p2_id text
+).
+</code></pre>
+
+<p>(2). 根据打标的结果，灌入已知的变量</p>
+
+<pre><code>has_transaction(p1_id, p2_id) = if l &gt; 0 then TRUE
+                  else if l &lt; 0 then FALSE
+                  else NULL end :- transaction_label_resolved(p1_id, p2_id, l).
+</code></pre>
+
+<p>此时变量表中的部分变量label已知，成为了先验变量。                  </p>
+
+<p>(3). 最后编译执行决策表：</p>
+
+<pre><code>$ deepdive compile &amp;&amp; deepdive do has_transaction
+</code></pre>
+
+<h4>2.2 因子图构建</h4>
+
+<p>(1). 指定特征</p>
+
+<p>将每一对has_transaction中的实体对和特征表连接起来，通过特征factor的连接，全局学习这些特征的权重。在app.ddlog中定义：</p>
+
+<pre><code>@weight(f)
+has_transaction(p1_id, p2_id) :-
+    transaction_candidate(p1_id, _, p2_id, _),
+    transaction_feature(p1_id, p2_id, f).
+</code></pre>
+
+<p>(2). 指定变量间的依赖性</p>
+
+<p>我们可以指定两张变量表间遵守的规则，并给这个规则以权重。比如c1和c2有交易，可以推出c2和c1也有交易。这是一条可以确保的定理，因此给予较高权重：</p>
+
+<pre><code> @weight(3.0)
+ has_transaction(p1_id, p2_id) =&gt; has_transaction(p2_id, p1_id) :-
+    transaction_candidate(p1_id, _, p2_id, _).
+</code></pre>
+
+<p>变量表间的依赖性使得deepdive很好地支持了多关系下的抽取。</p>
+
+<p>(3). 最后，编译，并生成最终的概率模型：</p>
+
+<pre><code>$ deepdive compile &amp;&amp; deepdive do probabilities
+</code></pre>
+
+<p>查看我们预测的公司间交易关系概率：</p>
+
+<pre><code>$ deepdive sql &quot;SELECT p1_id, p2_id, expectation FROM has_transaction_label_inference ORDER BY random() LIMIT 20&quot;
+</code></pre>
+
+<hr>
+
+<table><thead>
+<tr>
+<th>p1_id</th>
+<th>p2_id</th>
+<th>expectation</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1201778739_118_170_171</td>
+<td>1201778739_118_54_60</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1201778739_54_30_35</td>
+<td>1201778739_54_8_11</td>
+<td>0.035</td>
+</tr>
+<tr>
+<td>1201759193_1_26_31</td>
+<td>1201759193_1_43_48</td>
+<td>0.07</td>
+</tr>
+<tr>
+<td>1201766319_65_331_331</td>
+<td>1201766319_65_159_163</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1201761624_17_30_35</td>
+<td>1201761624_17_9_14</td>
+<td>0.188</td>
+</tr>
+<tr>
+<td>1201743500_3_0_5</td>
+<td>1201743500_3_8_14</td>
+<td>0.347</td>
+</tr>
+<tr>
+<td>1201789764_3_16_21</td>
+<td>1201789764_3_75_76</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1201778739_120_26_27</td>
+<td>1201778739_120_29_30</td>
+<td>0.003</td>
+</tr>
+<tr>
+<td>1201752964_3_21_21</td>
+<td>1201752964_3_5_10</td>
+<td>0.133</td>
+</tr>
+<tr>
+<td>1201775403_1_83_88</td>
+<td>1201775403_1_3_6</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1201778793_15_5_6</td>
+<td>1201778793_15_17_18</td>
+<td>0.984</td>
+</tr>
+<tr>
+<td>1201773262_2_85_88</td>
+<td>1201773262_2_99_99</td>
+<td>0.043</td>
+</tr>
+<tr>
+<td>1201734457_24_19_20</td>
+<td>1201734457_24_28_29</td>
+<td>0.081</td>
+</tr>
+<tr>
+<td>1201752964_22_48_50</td>
+<td>1201752964_22_9_10</td>
+<td>0.013</td>
+</tr>
+<tr>
+<td>1201759216_5_38_44</td>
+<td>1201759216_5_55_56</td>
+<td>0.305</td>
+</tr>
+<tr>
+<td>1201755097_4_18_22</td>
+<td>1201755097_4_52_57</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1201750746_2_0_5</td>
+<td>1201750746_2_20_26</td>
+<td>0.034</td>
+</tr>
+<tr>
+<td>1201759186_4_45_46</td>
+<td>1201759186_4_41_43</td>
+<td>0.005</td>
+</tr>
+<tr>
+<td>1201734457_18_7_11</td>
+<td>1201734457_18_13_18</td>
+<td>0.964</td>
+</tr>
+<tr>
+<td>1201759263_36_18_20</td>
+<td>1201759263_36_33_36</td>
+<td>0.002</td>
+</tr>
+</tbody></table>
+
+<p>至此，我们的交易关系抽取就基本完成了。更多详细说明请见<a href="http://deepdive.stanford.edu">http://deepdive.stanford.edu</a></p>
+
+</body>
+</html>

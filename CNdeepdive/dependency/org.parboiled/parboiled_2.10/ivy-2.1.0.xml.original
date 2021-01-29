@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.parboiled</groupId>
+    <artifactId>parboiled_2.10</artifactId>
+    <packaging>jar</packaging>
+    <description>Fast and elegant PEG parsing in Scala - lightweight, easy-to-use, powerful</description>
+    <url>http://parboiled.org</url>
+    <version>2.1.0</version>
+    <licenses>
+        <license>
+            <name>Apache-2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <name>parboiled</name>
+    <inceptionYear>2009</inceptionYear>
+    <organization>
+        <name>org.parboiled</name>
+        <url>http://parboiled.org</url>
+    </organization>
+    <scm>
+        <url>git@github.com:sirthias/parboiled2.git</url>
+        <connection>scm:git:git@github.com:sirthias/parboiled2.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <id>sirthias</id>
+            <name>Mathias Doenitz</name>
+        </developer>
+        <developer>
+            <id>alexander-myltsev</id>
+            <name>Alexander Myltsev</name>
+            <url>http://www.linkedin.com/in/alexandermyltsev</url>
+        </developer>
+    </developers>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.10.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.10.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.chuusai</groupId>
+            <artifactId>shapeless_2.10.4</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scalamacros</groupId>
+            <artifactId>quasiquotes_2.10</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.specs2</groupId>
+            <artifactId>specs2-core_2.10</artifactId>
+            <version>2.4.16</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.scodec</groupId>
+    <artifactId>scodec-bits_2.10</artifactId>
+    <packaging>bundle</packaging>
+    <description>scodec-bits</description>
+    <version>1.0.6</version>
+    <licenses>
+        <license>
+            <name>Three-clause BSD-style</name>
+            <url>https://github.com/scodec/scodec-bits/blob/master/LICENSE</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <name>scodec-bits</name>
+    <organization>
+        <name>org.scodec</name>
+        <url>http://scodec.org</url>
+    </organization>
+    <url>http://github.com/scodec/scodec-bits</url>
+    <scm>
+        <url>git@github.com:scodec/scodec-bits.git</url>
+        <connection>scm:git:git@github.com:scodec/scodec-bits.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <id>Michael Pilquist</id>
+            <name>mpilquist</name>
+            <url>http://github.com/Michael Pilquist</url>
+        </developer>
+        <developer>
+            <id>Paul Chiusano</id>
+            <name>pchiusano</name>
+            <url>http://github.com/Paul Chiusano</url>
+        </developer>
+    </developers>
+    <properties>
+        <info.apiURL>http://scodec.org/api/scodec-bits/1.0.6/</info.apiURL>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.10.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.10.4</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>
